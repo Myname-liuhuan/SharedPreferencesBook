@@ -82,8 +82,8 @@ public class MainActivity extends AppCompatActivity{
 
 
     public void showmyDialog(){
-        dialog =new Dialog(this,R.style.dialog);
-        final View dialogLayout=getLayoutInflater().inflate(R.layout.dialog,null);
+        dialog =new Dialog(this,R.style.dialog);//给定风格
+        final View dialogLayout=getLayoutInflater().inflate(R.layout.dialog,null);//给定布局
 
         TextView textView01,textView02,textView03,textView04;
         textView01=(TextView)dialogLayout.findViewById(R.id.textView01);
